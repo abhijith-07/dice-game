@@ -1,0 +1,35 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.imgContainer {
+    height: 100%;
+}
+
+.heroSection {
+    text-align: right;
+}
+
+h1.heroTitle {
+    font-size: 96px;
+}
+
+.playButton {
+    width: 220px;
+    height: 44px;
+    font-weight: 600;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
