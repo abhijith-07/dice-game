@@ -33,6 +33,7 @@ h1.heroTitle {
     border: none;
     outline: none;
     cursor: pointer;
+    transition: 0.4s background ease-in;
 }
 
 .playButton:hover {
