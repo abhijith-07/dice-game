@@ -1,6 +1,6 @@
 import styles from "./StartGame.module.css"
 
-export default function StartGame() {
+export default function StartGame(props) {
     return(
         <div className={styles.container}>
             <div className={styles.wrapper}>
@@ -9,7 +9,7 @@ export default function StartGame() {
                 </div>
                 <div className={styles.heroSection}>
                     <h1 className={styles.heroTitle}>DICE GAME</h1>
-                    <button className={styles.playButton}>Play Now</button>
+                    <button className={styles.playButton} onClick={props.toggle}>Play Now</button>
                 </div>
             </div>
         </div>
