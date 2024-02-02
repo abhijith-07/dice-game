@@ -20,6 +20,16 @@ export default function GamePlay() {
                 <p>Select Number</p>
             </div>
         </nav>
+        <div className={styles.gameContainer}>
+            <div className={styles.cubeContainer}>
+                <img src="/images/dice_1.svg" alt="" />
+                <p>Click to roll the Dice</p>
+            </div>
+            <div className={styles.gameButtons}>
+                <button>Reset Score</button>
+                <button>Show Rules</button>
+            </div>
+        </div>
         </>
     )
 }

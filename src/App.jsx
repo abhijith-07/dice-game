@@ -11,7 +11,7 @@ export default function App() {
 
     return(
         <>
-        {gameStarted?<GamePlay/>:<StartGame toggle={toggleGameStarted} />}
+            {gameStarted?<GamePlay/>:<StartGame toggle={toggleGameStarted} />}
         </>
     )
 }
