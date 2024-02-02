@@ -89,14 +89,3 @@ nav {
     border: 2px solid var(--black);
     transition: 0.35s background ease-in;
 }
-
-.rulesContainer {
-    display: none;
-    justify-content: center;
-    margin-top: 3rem;
-}
-
-.rulesContainer div {
-    background-color: #fbf1f1;
-    padding: 2rem;
-}

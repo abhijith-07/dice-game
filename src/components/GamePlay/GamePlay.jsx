@@ -1,6 +1,15 @@
+import React, { useState } from "react"
 import styles from "./GamePlay.module.css"
+import Rules from "../Rules/Rules"
 
 export default function GamePlay() {
+    
+    const [rules, setRules] = useState(false)
+
+    function toggleRules() {
+        setRules((prev) => !prev)
+    }
+
     return(
         <>
             <nav>
@@ -28,19 +37,11 @@ export default function GamePlay() {
                     </div>
                     <div className={styles.gameButtons}>
                         <button className={styles.resetBtn}>Reset Score</button>
-                        <button className={styles.rulesBtn}>Show Rules</button>
+                        <button className={styles.rulesBtn} onClick={toggleRules}>{ rules ? "Hide" : "Show" } Rules</button>
                     </div>
                 </div>
             </div>
-            <div className={styles.rulesContainer}>
-                <div>
-                    <h2>How to play dice game</h2>
-                    <p>Select any number</p>
-                    <p>Click on dice image</p>
-                    <p>After clicking on dice, if selected number is equal to dice number, you will get same point as dice</p>
-                    <p>If you get wrong guess then 2 point will be deducted</p>
-                </div>
-            </div>
+            { rules && <Rules/> }
         </>
     )
 }
