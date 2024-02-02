@@ -3,6 +3,7 @@ nav {
     justify-content: space-around;
     align-items: end;
     padding: 2em;
+    height: 14rem;
 }
 
 .score {
@@ -40,4 +41,62 @@ nav {
     margin-top: 1em;
     font-weight: 600;
     font-size: 1.5rem;
+}
+
+.gameContainer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+}
+
+.gameButtons {
+    width: 100%;
+    display: block;
+}
+
+.gameButtons button {
+    width: 100%;
+    height: 2.5rem;
+    margin: 1em 0;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4 background ease-in;
+}
+
+.resetBtn {
+    border: 2px solid var(--black);
+    background-color: var(--white);
+    transition: 0.3 background ease-in;
+}
+
+.resetBtn:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transition: 0.35s background ease-in;
+}
+
+.rulesBtn {
+    background-color: var(--black);
+    color: var(--white);
+    transition: 0.3 background ease-in;
+}
+
+.rulesBtn:hover {
+    background-color: var(--white);
+    color: var(--black);
+    border: 2px solid var(--black);
+    transition: 0.35s background ease-in;
+}
+
+.rulesContainer {
+    display: none;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.rulesContainer div {
+    background-color: #fbf1f1;
+    padding: 2rem;
 }
