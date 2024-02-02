@@ -35,6 +35,12 @@ nav {
     justify-content: center;
     align-items: center;
     border: 1px solid var(--black);
+    cursor: pointer;
+}
+
+.diceNumber .number:hover {
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .numberContainer p {
