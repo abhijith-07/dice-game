@@ -4,6 +4,8 @@ import Rules from "../Rules/Rules"
 
 export default function GamePlay() {
     
+    const diceNumber = [1, 2, 3, 4, 5, 6]
+
     const [rules, setRules] = useState(false)
 
     function toggleRules() {
@@ -19,12 +21,9 @@ export default function GamePlay() {
                 </div>
                 <div className={styles.numberContainer}>
                     <div className={styles.diceNumber}>
-                        <div className={styles.number}>1</div>
-                        <div className={styles.number}>2</div>
-                        <div className={styles.number}>3</div>
-                        <div className={styles.number}>4</div>
-                        <div className={styles.number}>5</div>
-                        <div className={styles.number}>6</div>
+                        {diceNumber.map((value, i) => (
+                            <div className={styles.number} key={i}>{value}</div>
+                        ))}
                     </div>
                     <p>Select Number</p>
                 </div>
