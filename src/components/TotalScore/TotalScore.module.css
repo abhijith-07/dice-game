@@ -1,0 +1,10 @@
+.score {
+    text-align: center;
+    font-size: 6.25rem;
+    margin-bottom: -2rem;
+}
+
+.scoreContainer p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styles from "./GamePlay.module.css"
 import Rules from "../Rules/Rules"
+import TotalScore from "../TotalScore/TotalScore"
 
 export default function GamePlay() {
     
@@ -15,10 +16,7 @@ export default function GamePlay() {
     return(
         <>
             <nav>
-                <div className={styles.scoreContainer}>
-                    <div className={styles.score}>0</div>
-                    <p>Total Score</p>
-                </div>
+                <TotalScore />
                 <div className={styles.numberContainer}>
                     <div className={styles.diceNumber}>
                         {diceNumber.map((value, i) => (
