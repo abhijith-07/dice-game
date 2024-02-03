@@ -19,11 +19,6 @@
     cursor: pointer;
 }
 
-.diceNumber .number:hover {
-    background-color: var(--black);
-    color: var(--white);
-}
-
 .numberContainer p {
     margin-top: 1em;
     font-weight: 600;
