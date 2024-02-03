@@ -2,10 +2,9 @@ import React, { useState } from "react"
 import styles from "./GamePlay.module.css"
 import Rules from "../Rules/Rules"
 import TotalScore from "../TotalScore/TotalScore"
+import DiceNumber from "../DiceNumber/DiceNumber"
 
 export default function GamePlay() {
-    
-    const diceNumber = [1, 2, 3, 4, 5, 6]
 
     const [rules, setRules] = useState(false)
 
@@ -17,14 +16,7 @@ export default function GamePlay() {
         <>
             <nav>
                 <TotalScore />
-                <div className={styles.numberContainer}>
-                    <div className={styles.diceNumber}>
-                        {diceNumber.map((value, i) => (
-                            <div className={styles.number} key={i}>{value}</div>
-                        ))}
-                    </div>
-                    <p>Select Number</p>
-                </div>
+                <DiceNumber />
             </nav>
             <div className={styles.gameContainer}>
                 <div>

@@ -1,0 +1,31 @@
+.diceNumber {
+    display: flex;
+    gap: 1rem;
+}
+
+.numberContainer {
+    text-align: right;    
+}
+
+.diceNumber .number {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--black);
+    cursor: pointer;
+}
+
+.diceNumber .number:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.numberContainer p {
+    margin-top: 1em;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
