@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+.cubeContainer {
+    cursor: pointer;
+}
+
 .gameButtons {
     width: 100%;
     display: block;
