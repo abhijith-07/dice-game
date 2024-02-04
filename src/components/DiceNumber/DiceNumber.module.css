@@ -3,6 +3,10 @@
     gap: 1rem;
 }
 
+.errorMessage {
+    color: red;
+}
+
 .numberContainer {
     text-align: right;    
 }
