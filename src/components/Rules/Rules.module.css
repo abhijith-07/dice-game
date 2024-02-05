@@ -8,3 +8,10 @@
     background-color: #fbf1f1;
     padding: 2rem;
 }
+
+@media (max-width: 576px) {
+    .rulesContainer div {
+        position: absolute;
+        top: 20%;
+    }
+}
