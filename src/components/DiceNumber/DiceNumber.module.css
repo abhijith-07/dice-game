@@ -78,4 +78,8 @@
         width: 2rem;
         height: 2rem;
     }
+
+    .errorMessage {
+        top: 10rem;
+    }
 }
