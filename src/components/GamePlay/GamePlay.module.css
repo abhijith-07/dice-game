@@ -24,3 +24,10 @@ nav {
         z-index: -1;
     }
 }
+
+@media (max-width: 576px) {
+    nav {
+        display: block;
+        height: 8rem;
+    }
+}
