@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./DiceNumber.module.css";
 
 export default function DiceNumber({ selectedNumber, setSelectedNumber, errorMessage, setErrorMessage }) {
