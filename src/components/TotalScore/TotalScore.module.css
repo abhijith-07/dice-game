@@ -24,23 +24,29 @@
 
 @media (max-width: 576px) {
     .scoreContainer {
-        display: block;
+        display: table;
         height: 3rem;
         width: 100%;
+        padding: 0 2em;
         margin-left: 0;
+        grid-template-columns: 1fr 1fr;
     }
 
     .score {
-        display: inline-block;
-        font-size: 1.5rem;
-        margin-left: 70%;
+        display: table-footer-group;
+        height: 50%;
+        font-size: 2rem;
         text-align: right;
     }
 
     .scoreContainer p {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        height: 50%;
         white-space: nowrap;
         font-size: 1.25rem;
-        margin-left: -50%;
+        text-align: left;
+        position: absolute;
+        margin-right: 1em;
     }
 }
