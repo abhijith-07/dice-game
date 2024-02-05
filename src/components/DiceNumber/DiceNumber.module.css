@@ -28,3 +28,30 @@
     font-weight: 600;
     font-size: 1.5rem;
 }
+
+/* 992, 768, 576 */
+
+@media (max-width: 998px) {
+    .diceNumber {
+        display: block;
+        position: absolute;
+        right: 5rem;
+        top: 5rem;
+    }
+    
+    .numberContainer p {
+        position: absolute;
+        font-size: 1.15rem;
+        top: 1.75rem;
+        right: 2.75rem;
+    }
+    /* .errorMessage {
+    } */
+    
+    .numberContainer {
+
+    }
+    
+    .diceNumber .number {
+    }    
+}
