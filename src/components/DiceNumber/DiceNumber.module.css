@@ -32,26 +32,24 @@
 /* 992, 768, 576 */
 
 @media (max-width: 998px) {
+    .numberContainer {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-right: 2rem;
+    }
+
     .diceNumber {
         display: block;
-        position: absolute;
-        right: 5rem;
-        top: 5rem;
     }
     
     .numberContainer p {
-        position: absolute;
-        font-size: 1.15rem;
-        top: 1.75rem;
-        right: 2.75rem;
+        display: none;
     }
     /* .errorMessage {
     } */
     
-    .numberContainer {
-
-    }
-    
-    .diceNumber .number {
-    }    
+    /* .diceNumber .number {
+    }     */
 }
