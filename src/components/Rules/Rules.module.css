@@ -9,6 +9,33 @@
     padding: 2rem;
 }
 
+.close {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(244, 35, 105);
+    border-radius: 3px;
+    border: 1px solid rgb(244, 35, 105);
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+
+@media (min-width: 576px) {
+    .rulesContainer {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .rulesContainer div {
+        position: relative;
+    }
+}
+
 @media (max-width: 576px) {
     .rulesContainer div {
         position: absolute;

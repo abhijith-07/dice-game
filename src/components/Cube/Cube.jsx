@@ -24,7 +24,7 @@ export default function Cube({ diceNumber, randomDiceNumberGenerator, setTotalSc
                     </div>
                 </div>
             </div>
-            { rules && <Rules/> }
+            { rules && <Rules setRules={setRules}/> }
         </>
     )
 }

@@ -1,9 +1,10 @@
 import styles from "./Rules.module.css"
 
-export default function Rules() {
+export default function Rules({setRules}) {
     return(
         <div className={styles.rulesContainer}>
             <div>
+                <p className={styles.close} onClick={() => setRules(false)}>x</p>
                 <h2>How to play dice game</h2>
                 <p>Select any number</p>
                 <p>Click on dice image</p>
